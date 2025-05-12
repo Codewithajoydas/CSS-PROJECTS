@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 100px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.netflix-logo {
+  width: 120px;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.header-buttons button {
+  padding: 9px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.header-buttons button:nth-child(1) {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.header-buttons button:nth-child(2) {
+  background-color: #e50914;
+  color: white;
+}
+
+/* === HERO SECTION === */
+.main-content {
+  position: relative;
+  background-image: url("./assets/heroBanner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.main-content-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.main-content-text h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.main-content-text h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.main-content-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* === SIGNUP FORM === */
+#signup-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+input[type="email"] {
+  padding: 18px;
+  width: 350px;
+  max-width: 100%;
+  border-radius: 4px;
+  border: none;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: 1px solid #aaa;
+}
+
+#signup-form button {
+  background-color: #e50914;
+  color: white;
+  font-weight: bold;
+  padding: 18px 30px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .main-content-text h1 {
+    font-size: 2rem;
+  }
+
+  .main-content-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .header-buttons {
+    flex-direction: column;
+  }
+}
+.trending {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 100px;
+}
+.cr {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow-x: scroll;
+  height: 300px;
+  align-items: center;
+  gap: 30px;
+}
+.cr img:first-child {
+  margin-left: 30px;
+}
+.cr::-webkit-scrollbar {
+  display: none;
+}
+.cr img {
+  min-width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  column-gap: 30px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  object-fit: cover;
+}
+.cr img:hover {
+  transform: scale(1.1);
+}
+.btnb,
+.btnp {
+  background-color: #e50914;
+  color: white;
+  font-weight: bold;
+  padding: 5px 6px;
+  height: 100px;
+  border-radius: 14px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+.btnb {
+  left: 60px;
+}
+.btnp {
+  right: 60px;
+}
+.trending1 {
+  gap: 20px;
+  padding: 40px 100px;
+}
+.cards {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 40px;
+}
+.card {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  flex-direction: column;
+  overflow-x: scroll;
+  /* align-items: center; */
+  gap: 30px;
+  height: 300px;
+  background: linear-gradient(
+    140deg,
+    rgba(56, 59, 226, 0.192),
+    rgba(221, 84, 84, 0.13)
+  );
+  padding: 10px;
+  border-radius: 15px;
+  position: relative;
+  P {
+    color: gray;
+  }
+  h1 {
+    font-size: x-large;
+  }
+}
+.card svg {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+}
+.fq {
+  padding: 40px 100px;
+}
+.accordions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.accordion h2{
+border-bottom: 1px solid rgb(34, 34, 34);
+padding: 20px;
+background: #222222;
+transition: all 0.3s ease;
+position: relative;
+}
+.accordion h2:hover {
+  background: #474747;
+  cursor: pointer;
+}
+.accordion p {
+  padding: 20px;
+  background: #222222;
+
+  display: none;
+  font-size: large;
+  transition: all 0.3s ease;
+}
+.accordion p.active {
+  display: block !important;
+}
+.accordion h2::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: larger;
+}
+.mail{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px 100px;
+  justify-content: center;align-items: center;
+}
+.input button{
+  background-color: #e50914;
+  color: white;
+  font-weight: bold;
+  padding: 18px 30px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  cursor: pointer;
+}
+
+.input input{
+  width: 500px;
+}
+.input{
+  display: flex;
+  gap: 10px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px 100px;
+  width: 100%;
+}
+footer{
+  padding: 40px 100px;
+}
+a{
+  color: rgb(151, 151, 151);
+}
+ul{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  flex-direction: column;
+}
+.col h3{
+  padding-bottom: 10px;
+  color: rgb(151, 151, 151);
+
+}
+.col{
+  width: 100%;
+}
