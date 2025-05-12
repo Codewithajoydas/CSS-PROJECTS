@@ -31,7 +31,7 @@ A collection of 10 responsive homepage clones of popular websites like YouTube, 
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/css-projects.git
+   git clone https://github.com/codewithajoydas/css-projects.git
    ```
 
 Open any project folder.
