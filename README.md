@@ -41,5 +41,3 @@ Run index.html in your browser.
 ## Contributing
 Pull requests are welcome. For major changes, open an issue first to discuss.
 
-## License
-MIT License @codewithajoydas
