@@ -14,7 +14,7 @@ A collection of 10 responsive homepage clones of popular websites like YouTube, 
 
 | Website Clone     | Tech Used         | Features                        | ScreenShots |
 |-------------------|-------------------|----------------------------------|-------------|
-| YouTube           | HTML + CSS        | Header, Sidebar, Video Grid      | ![image](https://github.com/user-attachments/assets/12052d98-d9e1-4d97-a87d-e5ca34b59f8c) |
+| YouTube           | HTML + CSS + JS        | Header, Sidebar, Video Grid      | ![image](https://github.com/user-attachments/assets/12052d98-d9e1-4d97-a87d-e5ca34b59f8c) |
 | Netflix           | HTML + CSS        | Hero Section, Slider, Cards      | ![image](https://github.com/user-attachments/assets/bc953115-4d81-4e6b-83e9-f37103083aa6) |
 | Amazon            | HTML + CSS        | Navbar, Product Grid             |  Added Soon           |
 | Instagram         | HTML + CSS        | Profile UI, Feed Layout          |  Added Soon   |
