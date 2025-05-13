@@ -12,18 +12,19 @@ A collection of 10 responsive homepage clones of popular websites like YouTube, 
 
 ##  Projects Included
 
-| Website Clone     | Tech Used         | Features                        |
-|-------------------|-------------------|---------------------------------|
-| YouTube           | HTML + CSS        | Header, Sidebar, Video Grid     |
-| Netflix           | HTML + CSS        | Hero Section, Slider, Cards     |
-| Amazon            | HTML + CSS        | Navbar, Product Grid            |
-| Instagram         | HTML + CSS        | Profile UI, Feed Layout         |
-| Spotify           | HTML + CSS        | Sidebar, Player, Playlist View  |
-| Twitter/X         | HTML + CSS        | Feed, Sidebar, Button Styling   |
-| LinkedIn          | HTML + CSS        | Nav, Job Cards, Responsive Grid |
-| Facebook          | HTML + CSS        | Post Cards, Layout              |
-| Gmail             | HTML + CSS        | Sidebar, Email List             |
-| Google Homepage   | HTML + CSS        | Centered Search, Footer         |
+| Website Clone     | Tech Used         | Features                        | ScreenShots |
+|-------------------|-------------------|----------------------------------|-------------|
+| YouTube           | HTML + CSS        | Header, Sidebar, Video Grid      | ![image](https://github.com/user-attachments/assets/12052d98-d9e1-4d97-a87d-e5ca34b59f8c) |
+| Netflix           | HTML + CSS        | Hero Section, Slider, Cards      | ![image](https://github.com/user-attachments/assets/bc953115-4d81-4e6b-83e9-f37103083aa6) |
+| Amazon            | HTML + CSS        | Navbar, Product Grid             |  Added Soon           |
+| Instagram         | HTML + CSS        | Profile UI, Feed Layout          |  Added Soon   |
+| Spotify           | HTML + CSS        | Sidebar, Player, Playlist View   |  Added Soon |
+| Twitter/X         | HTML + CSS        | Feed, Sidebar, Button Styling    |  Added Soon |
+| LinkedIn          | HTML + CSS        | Nav, Job Cards, Responsive Grid  | Added Soon |
+| Facebook          | HTML + CSS        | Post Cards, Layout               | Added Soon |
+| Gmail             | HTML + CSS        | Sidebar, Email List              | Added Soon |
+| Google Homepage   | HTML + CSS        | Centered Search, Footer          | Added Soon |
+
 
 > More clones may be added in future updates 🚧
 
