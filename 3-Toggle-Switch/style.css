@@ -1,0 +1,57 @@
+:root {
+    --bg-color-light: #f4f4f4;
+    --text-color-light: #1a1a1a;
+    --bg-color-dark: #1a1a1a;
+    --text-color-dark: #f4f4f4;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.5s, color 0.5s;
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+  }
+  
+  #toggleSwitch {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 60px;
+    height: 30px;
+    background: #000;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s;
+  }
+  
+  #toggleSwitch::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    transition: transform 0.3s;
+  }
+  
+  #toggleSwitch:checked {
+    background: #555;
+  }
+  
+  #toggleSwitch:checked::before {
+    transform: translateX(30px);
+  }
+  
+  body.dark-mode {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+  }
+  
