@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+.card {
+  width: 200px;
+  height: 250px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  text-align: center;
+  margin: 10px;
+  transition: transform 0.5s ease;
+  line-height: 4%;
+  padding: 10px;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:nth-child(even) {
+  background-color: #ddd;
+  cursor: pointer;
+  height: 300px;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+body{
+    display: flex;
+    justify-content: center;align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn{
+    width: 150px;
+    height: 30px;
+    background-color: #4caf4f76;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+}
