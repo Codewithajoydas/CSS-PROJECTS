@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+}
+.gallery{
+    columns: 3;
+    gap: 10px;
+    row-gap: 10px;
+}
+@media (max-width: 767px) {
+    .gallery{
+        columns: 2;
+    }
+}
+@media (max-width:540) {
+    .gallery{
+        columns: 1;
+    }
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+    margin: 3px;
+    border-radius: 10px;
+}

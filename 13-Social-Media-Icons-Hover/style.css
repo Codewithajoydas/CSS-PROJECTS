@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    gap: 30px;
+  }
+  
+  svg {
+    width: 50px;
+    height: 50px;
+    fill: #000000;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .icons {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icons::before {
+    content: attr(data-icons);
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.9);
+    padding: 6px 12px;
+    font-size: 14px;
+    background: black;
+    color: white;
+    border-radius: 6px;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 10;
+    transition: all 0.6s cubic-bezier(0.27, -0.36, 0, 1.24);
+    transform: rotate(180deg);
+  }
+  
+  .icons::after {
+    content: "";
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    z-index: 9;
+    pointer-events: none;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid black;
+    transform: rotate(180deg);
+    transition: all 0.6s cubic-bezier(0.27, -0.36, 0, 1.24);
+    opacity: 0;
+  }
+  
+  @keyframes bounce {
+    0%{
+        transform:translateX(-50%) scale(1.4);
+    }
+    50%{
+        transform:translateX(-50%) scale(1);
+    }
+    100%{
+        transform:translateX(-50%) scale(1.1);
+    }
+  }
+  .icons:hover::before,
+  .icons:hover::after {
+    opacity: 1;
+    animation: bounce .2s linear;
+    transform: translateX(-50%) scale(1);
+  }
+  
