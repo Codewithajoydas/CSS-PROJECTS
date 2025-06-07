@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000000bf;
+}
+.container {
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(180deg, rgb(56, 56, 56), rgb(5, 5, 5));
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 1s;
+  user-select: none;;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(
+    300deg,
+    rgba(255, 255, 255, 0.209),
+    rgba(0, 0, 0, 0.661)
+  );
+  border-radius: 40%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  animation: borderRotate 3s linear infinite;
+}
+
+@keyframes borderRotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+  }
+  
+.profile-info{
+    text-align: center;
+    line-height: 1px;
+    color: rgba(255, 255, 255, 0.566);
+    font-family: "Zain", sans-serif;
+    font-size: 30px;
+   p{
+    font-size: 20px;
+   }
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg{
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
+        fill: rgba(255, 255, 255, 0.566);
+    }
+}
+.profile-picture:hover {
+    transform: scale(1);
+    cursor: pointer;
+    img{
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+    }
+
+}
+img{
+    transition: all 1s;
+}
+.container:hover{
+    transform: scale(1.11) skew(6deg);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.6);
+
+}
+.profile-picture{
+    transition: all 1s ease;
+}

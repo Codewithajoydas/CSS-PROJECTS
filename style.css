@@ -58,6 +58,27 @@ li:hover{
 
 
 
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #030303bf, #3498db3b);
+    border-radius: 6px;
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #000000, #95b7ce4d);
+  }
+  
+  .scroll-box {
+    scroll-behavior: smooth;
+  }
 
 
 

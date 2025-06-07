@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    display: grid;
+    place-items: center;
+    height: 100dvh;
+    background: #f9f9f9;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .stars {
+    direction: rtl;
+    display: inline-flex;
+  }
+  
+  .stars input {
+    display: none;
+  }
+  
+  .stars label {
+    font-size: 50px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .stars label::before {
+    content: "★";
+  }
+  
+  .stars input:checked ~ label {
+    color: #ccc;
+  }
+  
+  .stars input:checked + label,
+  .stars input:checked + label ~ label {
+    color: gold;
+  }
+  

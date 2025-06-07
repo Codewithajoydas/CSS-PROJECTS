@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  label {
+    background: #474747;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  span {
+    width: 80px;
+    height: 5px;
+    background: #555;
+    transition: 0.3s;
+  }
+  
+  .container:has(#c1:checked) label.c1 {
+    background: #6a80eb;
+  }
+  
+  .container:has(#c1:checked):has(#c2:checked) label.c2 {
+    background: #6a80eb;
+  }
+  .container:has(#c1:checked):has(#c2:checked) span:nth-of-type(1) {
+    background: #6a80eb;
+  }
+  
+  .container:has(#c1:checked):has(#c2:checked):has(#c3:checked) label.c3 {
+    background: #6a80eb;
+  }
+  .container:has(#c1:checked):has(#c2:checked):has(#c3:checked) span:nth-of-type(2) {
+    background: #6a80eb;
+  }
+  

@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;align-items: center;
+  height: 100vh;
+  background: #000000b3;
+  transition: all 5s ease;
+}
+img {
+  transition: all .6s ease;
+  width: 500px;
+  object-fit: cover;
+}
+img:hover {
+  cursor: pointer;
+  width: 100vw;
+  height: 100vh;
+}

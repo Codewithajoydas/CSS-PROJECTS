@@ -1,0 +1,33 @@
+.scroll-box {
+  width: 80%;
+  height: 70vh;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  overflow-y: scroll;
+  background: #f9f9f9;
+  font-family: sans-serif;
+  border-radius:10px;
+}
+
+.scroll-box::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 6px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #8e44ad, #3498db);
+  border-radius: 6px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #732d91, #2c81ba);
+}
+
+.scroll-box {
+  scroll-behavior: smooth;
+}
