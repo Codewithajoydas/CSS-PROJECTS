@@ -3,6 +3,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   user-select: none;
   overflow-x: hidden;
+  background: transparent;
 }
 * {
   transition: background 0.3s ease-in-out;
@@ -18,6 +19,9 @@ body {
     "sidebar preview  ";
   width: 100vw;
   height: 100vh;
+  border-radius: 10px 0 0 0 !important;
+  background-color: #ebebeb;
+
 }
 
 header {
@@ -69,10 +73,11 @@ h3 {
 .preview {
   grid-area: preview;
   padding: 20px;
-  background-color: #ffffff;
+  background-color:white ;
   height: 90vh;
   flex-grow: 1;
   overflow-x: hidden;
+  border-radius:10px 0  0 0 !important;
 }
 
 iframe {
@@ -191,15 +196,15 @@ li:hover {
   }
 }
 .search {
-  background: #9e9e9e;
+  background: #ffffff;
   height: 40px;
-  width: 400px;
+  width: 500px;
   display: flex;
   justify-content: center;
   padding: 10px;
   align-items: center;
   border-radius: 10px;
-  border: 1px solid white;
+  border: 1px solid rgb(0, 0, 0);
   transition: all 1s ease-in-out;
   &:hover {
     border: 1px solid #000;
@@ -301,7 +306,7 @@ header.dark,
   color: white;
 }
 .preview.dark {
-  background: #00000091;
+  background: #3b3b3bb9;
 }
 body.dark a {
   color: white;
@@ -324,6 +329,7 @@ header.dark {
   }
   .search {
     background: #111;
+    border: 1px solid white;
     input {
       color: white;
     }
@@ -418,4 +424,7 @@ mark {
   input{
     color: white;
   }
+}
+.container.dark{
+  background: #111;
 }

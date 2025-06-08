@@ -7,6 +7,7 @@ let list = document.querySelector(".list");
 let searchInput = document.getElementById("searchInput");
 let searchcontainer = document.querySelector(".search-container");
 let iksds = document.querySelector(".iksds");
+let container = document.querySelector(".container");
 // Toggle sidebar
 side.addEventListener("click", function () {
   sidebar.classList.toggle("active");
@@ -46,7 +47,8 @@ window.addEventListener("DOMContentLoaded", () => {
     header.classList.add("dark");
     sidebar.classList.add("dark");
     preview.classList.add("dark");
-    menu.classList.add("dark");
+      menu.classList.add("dark");
+      container.classList.add("dark");
 searchcontainer.classList.add("dark");
     const links = document.querySelectorAll("a");
     links.forEach((link) => {
@@ -68,7 +70,8 @@ function toggleDarkMode() {
   header.classList.toggle("dark");
   sidebar.classList.toggle("dark");
   preview.classList.toggle("dark");
-  menu.classList.toggle("dark");
+    menu.classList.toggle("dark");
+    container.classList.toggle("dark");
   localStorage.setItem("theme", isDark ? "dark" : "light");
 searchcontainer.classList.toggle("dark");
   const links = document.querySelectorAll("a");
