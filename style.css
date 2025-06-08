@@ -351,7 +351,7 @@ button {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #fff;
+  background: #fff ;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -374,8 +374,9 @@ button {
   border: none;
   outline: none;
   border-radius: 10px;
-  background: #fff;
+  background: #ffffff00;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
   ul{
     margin-top: 20px;
   }
@@ -383,6 +384,7 @@ button {
     width: 100%;
     padding: 5px;
     border: none;
+    background: none;
     outline: none;
     border-radius: 5px;
     transition: all 0.3s;
@@ -409,4 +411,11 @@ mark {
   color: black;
   font-weight: bold;
   padding: 0 2px;
+}
+.search-container.dark{
+  background: #111;
+  color: white;
+  input{
+    color: white;
+  }
 }

@@ -47,7 +47,7 @@ window.addEventListener("DOMContentLoaded", () => {
     sidebar.classList.add("dark");
     preview.classList.add("dark");
     menu.classList.add("dark");
-
+searchcontainer.classList.add("dark");
     const links = document.querySelectorAll("a");
     links.forEach((link) => {
       link.style.color = "white";
@@ -70,7 +70,7 @@ function toggleDarkMode() {
   preview.classList.toggle("dark");
   menu.classList.toggle("dark");
   localStorage.setItem("theme", isDark ? "dark" : "light");
-
+searchcontainer.classList.toggle("dark");
   const links = document.querySelectorAll("a");
   links.forEach((link) => {
     link.style.color = isDark ? "white" : "";
