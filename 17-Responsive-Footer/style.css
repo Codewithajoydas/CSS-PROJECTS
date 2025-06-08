@@ -9,6 +9,8 @@ body {
     grid-template-rows: auto 1fr auto;
     background: linear-gradient(to right, #141e30, #243b55);
     color: #fff;
+    width: 100%;
+    
   }
   
   /* HEADER */
@@ -26,13 +28,14 @@ body {
   /* MAIN */
   main {
     grid-area: main;
-    padding: 30px;
+    /* padding: 10px; */
     background-color: #f1f1f1;
     color: #333;
     display: flex;
     flex-direction: column;
     gap: 20px;
     min-height: 300px;
+    width: 100vw !important;
   }
   
   /* FOOTER */
@@ -106,3 +109,8 @@ body {
     transform: scale(1.2);
   }
   
+  @media (min-width: 768px) {
+    body{
+      max-width: 400px !important;
+    }
+  }
