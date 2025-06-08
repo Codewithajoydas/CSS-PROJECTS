@@ -3,11 +3,10 @@
   height: 70vh;
   margin: 50px auto;
   padding: 20px;
-  border: 2px solid #ccc;
   overflow-y: scroll;
-  background: #f9f9f9;
   font-family: sans-serif;
   border-radius:10px;
+  color: gray;
 }
 
 .scroll-box::-webkit-scrollbar {

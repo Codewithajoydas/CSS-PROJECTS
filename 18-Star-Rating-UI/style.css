@@ -4,7 +4,6 @@ body {
     display: grid;
     place-items: center;
     height: 100dvh;
-    background: #f9f9f9;
   }
   
   .container {

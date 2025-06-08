@@ -10,7 +10,7 @@
     <div class="container">
       <header>
         <h3>📂 CSS PROJECTS</h3>
-        <div class="search">
+        <div class="search" onclick="openSearchBar()">
           <label for="text">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -38,6 +38,8 @@
               autocomplete="off"
               tabindex="1"
               accesskey="s"
+              oninput="searchProjects()"
+              onkeydown="if(event.key === 'Enter'){searchProjects()}"
             />
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +64,7 @@
             class="smbtn"
             style="display: flex; align-items: center; gap: 15px"
           >
-            <a
+            <a 
               class="github-button"
               href="https://github.com/codewithajoydas/CSS-PROJECTS"
               data-color-scheme="no-preference: light; light: light; dark: dark;"
@@ -123,20 +125,7 @@
 
             <!-- Dark Mode Toggle -->
             <button onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
-              <svg
-                id="theme-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-moon"
-              >
-                <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-contrast-icon lucide-contrast"><circle cx="12" cy="12" r="10"/><path d="M12 18a6 6 0 0 0 0-12v12z"/></svg>
             </button>
           </div>
 
@@ -161,7 +150,7 @@
                 <path d="M3 18h18" />
               </svg>
             </button>
-            <div style="position: relative;">
+            <div style="position: relative;" class="iksds">
               <button onclick="toggleMenu()">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -183,13 +172,14 @@
               <div class="menu">
                 <nav>
                   <ul>
-                    <li>
+                    <li onclick="openSearchBar()">
                       <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search-icon lucide-search"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg></span>
                       <span>Search</span>
                     </li>
                     <li><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell-icon lucide-bell"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg></span><span>Notification</span></li>
                     <li><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings-icon lucide-settings"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></span><span>Settings</span></li>
-                    <li><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-palette-icon lucide-palette"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"/><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/></svg></span><span>Theme</span></li>
+                    <li onclick="toggleDarkMode()"><span>              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-contrast-icon lucide-contrast"><circle cx="12" cy="12" r="10"/><path d="M12 18a6 6 0 0 0 0-12v12z"/></svg>
+                    </span><span>Theme</span></li>
                   </ul>
                 </nav>
               </div>
@@ -387,6 +377,196 @@
           src="./1-Button-Hover-Effects/index.html"
           name="projectFrame"
         ></iframe>
+      </div>
+      <div class="search-container">
+       <div class="inp-box">
+        <input type="text" id="searchInput" placeholder="Search for projects..." autofocus="true" autocomplete="off" />
+        <button onclick="openSearchBar()">Close</button>
+       </div>
+       <ul class="list">
+        <ol type="1">
+          <li>
+            <a
+              href="./1-Button-Hover-Effects/index.html"
+              target="projectFrame"
+              title="Cool hover animations for buttons"
+            >
+              Button Hover Effect
+            </a>
+          </li>
+          <li>
+            <a
+              href="./2-Loading-Spinner/index.html"
+              target="projectFrame"
+              title="Simple and elegant CSS spinners"
+            >
+              Loading Spinner
+            </a>
+          </li>
+          <li>
+            <a
+              href="./3-Toggle-Switch/index.html"
+              target="projectFrame"
+              title="Custom toggle switches with smooth animations"
+            >
+              Toggle Switch
+            </a>
+          </li>
+          <li>
+            <a
+              href="./4-Navigation-Bar/index.html"
+              target="projectFrame"
+              title="Responsive navigation bar with dropdown menus"
+            >
+              Navigation Bar
+            </a>
+          </li>
+          <li>
+            <a
+              href="./5-Responsive-Grid-Layout/index.html"
+              target="projectFrame"
+              title="Flexible grid layouts adapting to screen sizes"
+            >
+              Responsive Grid Layout
+            </a>
+          </li>
+          <li>
+            <a
+              href="./6-Accordion/index.html"
+              target="projectFrame"
+              title="Collapsible sections with smooth toggle"
+            >
+              Accordion
+            </a>
+          </li>
+          <li>
+            <a
+              href="./7-Modal-Popup/index.html"
+              target="projectFrame"
+              title="Popup modals for user interaction"
+            >
+              Modal Popup
+            </a>
+          </li>
+          <li>
+            <a
+              href="./8-Tooltip/index.html"
+              target="projectFrame"
+              title="Informative tooltips on hover"
+            >
+              Tooltip
+            </a>
+          </li>
+          <li>
+            <a
+              href="./9-Pricing-Cards/index.html"
+              target="projectFrame"
+              title="Stylish pricing option cards"
+            >
+              Pricing Cards
+            </a>
+          </li>
+          <li>
+            <a
+              href="./10-Simple-Responsive-Form/index.html"
+              target="projectFrame"
+              title="Clean and responsive forms"
+            >
+              Simple Responsive Form
+            </a>
+          </li>
+          <li>
+            <a
+              href="./11-Image-Gallery/index.html"
+              target="projectFrame"
+              title="Interactive image gallery with hover effects"
+            >
+              Image Gallery
+            </a>
+          </li>
+          <li>
+            <a
+              href="./12-Sticky-Header/index.html"
+              target="projectFrame"
+              title="Header that stays fixed on scroll"
+            >
+              Sticky Header
+            </a>
+          </li>
+          <li>
+            <a
+              href="./13-Social-Media-Icons-Hover/index.html"
+              target="projectFrame"
+              title="Animated social media icon hovers"
+            >
+              Social Media Icons Hover
+            </a>
+          </li>
+          <li>
+            <a
+              href="./14-Profile-Card-UI/index.html"
+              target="projectFrame"
+              title="User profile cards with neat UI"
+            >
+              Profile Card UI
+            </a>
+          </li>
+          <li>
+            <a
+              href="./15-Image-Hover-Zoom/index.html"
+              target="projectFrame"
+              title="Zoom effect on image hover"
+            >
+              Image Hover Zoom
+            </a>
+          </li>
+          <li>
+            <a
+              href="./16-Step-Progress-Bar/index.html"
+              target="projectFrame"
+              title="Multi-step progress bar UI"
+            >
+              Step Progress Bar
+            </a>
+          </li>
+          <li>
+            <a
+              href="./17-Responsive-Footer/index.html"
+              target="projectFrame"
+              title="Flexible footer design"
+            >
+              Responsive Footer
+            </a>
+          </li>
+          <li>
+            <a
+              href="./18-Star-Rating-UI/index.html"
+              target="projectFrame"
+              title="Interactive star rating system"
+            >
+              Star Rating UI
+            </a>
+          </li>
+          <li>
+            <a
+              href="./19-Custom-Scrollbar/index.html"
+              target="projectFrame"
+              title="Styled scrollbars for better UI"
+            >
+              Custom Scrollbar
+            </a>
+          </li>
+          <li>
+            <a
+              href="./20-Mobile-First-Layout/index.html"
+              target="projectFrame"
+              title="Layout optimized for mobile devices"
+            >
+              Mobile First Layout
+            </a>
+          </li>
+        </ol>
+       </ul>
       </div>
     </div>
     <script src="script.js"></script>

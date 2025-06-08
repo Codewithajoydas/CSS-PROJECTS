@@ -1,9 +1,11 @@
 body{
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: rgb(240, 239, 240);
     padding: 10px;
     user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #btn{
