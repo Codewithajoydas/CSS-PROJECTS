@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  font-size: clamp(1rem, 7rem, 8rem);
+  text-shadow: 1px 1px 50px #0077ff;
+  text-decoration-style: dashed;
+  color: #0077ff;
+ 
+}

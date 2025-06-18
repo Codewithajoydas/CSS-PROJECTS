@@ -8,6 +8,16 @@ let searchInput = document.getElementById("searchInput");
 let searchcontainer = document.querySelector(".search-container");
 let iksds = document.querySelector(".iksds");
 let container = document.querySelector(".container");
+document.querySelectorAll("li").forEach((el) => {
+  el.addEventListener("click", () => {
+    document.querySelectorAll("li").forEach((item) => {
+      item.classList.remove("active");
+    });
+
+    el.classList.add("active");
+  });
+});
+
 // Toggle sidebar
 side.addEventListener("click", function () {
   sidebar.classList.toggle("active");
