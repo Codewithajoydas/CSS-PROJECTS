@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://css.codewithajoydas.live/</loc>
+    <lastmod>2025-06-25T18:21:38+01:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <url><loc>https://css.codewithajoydas.live/1-Animation-Card-Hover/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/2-Loading-Spinner/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/3-Toggle-Switch/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/4-Responsive-Sidebar-Menu/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/5-Responsive-Navbar/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/6-Responsive-Image-Gallery/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/7-Glowing-Button-Animation/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/8-Profile-Card/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/9-Glassmorphism-Card/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/10-Simple-Responsive-Form/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/11-Product-Card/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/12-Testimonial-Section/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/13-Gradient-Background-Animation/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/14-Wave-Footer/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/15-Login-Form/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/16-Step-Progress-Bar/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/17-Responsive-Footer/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/18-Social-Media-Icons-Hover/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/19-Custom-Scrollbar/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/20-Card-Slider/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/21-Neumorphism-Buttons/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/22-Hover-Image-Effect/</loc><priority>0.8</priority></url>
+  <url><loc>https://css.codewithajoydas.live/23-Popup-Modal/</loc><priority>0.8</priority></url>
+
+</urlset>
