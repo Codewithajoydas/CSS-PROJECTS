@@ -66,6 +66,7 @@
               oninput="searchProjects()"
               onkeydown="if(event.key === 'Enter'){searchProjects()}"
             />
+           
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -407,7 +408,7 @@
       </div>
       <div class="search-container">
        <div class="inp-box">
-        <input type="text" id="searchInput" placeholder="Search for projects..." autofocus="true" autocomplete="off" />
+        <input type="search" id="searchInput" placeholder="Search for projects..." autofocus="true" autocomplete="off" />
         <button onclick="openSearchBar()">Close</button>
        </div>
        <ul class="list">

@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  color: rgba(235, 235, 235, 0.829);
+  background: url("./hi-estudio-0OYaO7mvT8k-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card {
+  display: flex;
+  width: 500px;
+  gap: 20px;
+  padding: 40px;
+  background: linear-gradient(
+    40deg,
+    rgba(255, 255, 255, 0.151),
+    transparent 40%
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  /* box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.151); */
+  border: 1px solid rgba(255, 255, 255, 0.274);
+}
+.card .c-profile img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+}
+.c-name {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: wheat;
+}
+.c-link a{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.c-social{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.c-social svg{
+    width: 30px;
+    height: 30px;
+}

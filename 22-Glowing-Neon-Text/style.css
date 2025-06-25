@@ -8,11 +8,13 @@ body {
   height: 100dvh;
   background: #000;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
 }
 h1 {
   font-size: clamp(1rem, 7rem, 8rem);
-  text-shadow: 1px 1px 50px #0077ff;
+  text-shadow: 1px 1px 50px #fcfcfc;
   text-decoration-style: dashed;
-  color: #0077ff;
- 
+  color: transparent;
+ -webkit-text-stroke-color: white;
+ -webkit-text-stroke-width: 1px;
 }

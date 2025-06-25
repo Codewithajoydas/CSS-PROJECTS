@@ -94,7 +94,12 @@ searchcontainer.classList.toggle("dark");
 searchInput.addEventListener("input", searchProjects);
 
 function openSearchBar() {
-    searchcontainer.classList.toggle("active");
+  searchcontainer.classList.toggle("active");
+
+  const input = searchcontainer.querySelector("input"); 
+  if (input) {
+    input.focus(); 
+  }
 }
 
 
