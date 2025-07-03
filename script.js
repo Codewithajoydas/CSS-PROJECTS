@@ -167,3 +167,11 @@ function searchProjects() {
     setTimeout(() => (fallback.style.display = "none"), 200);
   }
 }
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js").then((e) => {
+    console.log("Yehh! Service Worker registered", e);
+  }).catch((e) => {
+    console.log("Error registering");
+  })
+}
